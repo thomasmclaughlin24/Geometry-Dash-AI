@@ -45,11 +45,11 @@ if(success):
     images = np.zeros((4,1024)).tolist()
     action = None
     actions = []
-    plt.ion()
+    """plt.ion()
     figure, axis = plt.subplots()
     figure.set_figwidth(4)
     figure.set_figheight(4)
-    bar_graph = axis.bar((0,1), (jump_reward, no_jump_reward))
+    bar_graph = axis.bar((0,1), (jump_reward, no_jump_reward))"""
     while True:
         image = GetImage()
         image = image.reshape(1, -1)
